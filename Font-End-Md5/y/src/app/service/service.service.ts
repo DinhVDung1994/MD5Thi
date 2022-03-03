@@ -31,7 +31,7 @@ export class ServiceService {
     return  this.http.post('http://localhost:3000/books',t)
   }
   //
-  updateTour(bookCreate: Books):Observable<any> {
+  updateBook(bookCreate: Books):Observable<any> {
     return this.http.put('http://localhost:3000/books/'+bookCreate.id, bookCreate)
   }
   //

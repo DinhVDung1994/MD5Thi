@@ -48,7 +48,7 @@ export class ShowbooksComponent implements OnInit {
   }
   //
   UpdateBook(bCreate: Books) {
-    this.bookService.updateTour(bCreate).subscribe((data) =>{
+    this.bookService.updateBook(bCreate).subscribe((data) =>{
       alert("Update Successfully!")
       this.resetInput()
       this.findAll();
